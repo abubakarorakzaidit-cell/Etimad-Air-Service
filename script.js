@@ -49,7 +49,7 @@
     const data = new FormData(form);
     const type = data.get('tripType');
     const message = [
-      'Assalam-o-Alaikum Etimad Air Service, I would like to enquire about a flight.',
+      'Assalam-o-Alaikum Etimad Air Services, I would like to enquire about a flight.',
       '', `Trip type: ${type}`, `Passenger name: ${data.get('passengerName')}`, `Contact number: ${data.get('passengerPhone')}`,
       `From: ${data.get('origin')}`, `To: ${data.get('destination')}`, `Departure date: ${data.get('departureDate')}`,
       ...(type === 'Return' ? [`Return date: ${data.get('returnDate')}`] : []),
@@ -66,7 +66,7 @@
     if (!form.reportValidity()) return;
     const data = new FormData(form);
     const message = [
-      'Assalam-o-Alaikum Etimad Air Service,', '', 'I have a message / enquiry for your team.',
+      'Assalam-o-Alaikum Etimad Air Services,', '', 'I have a message / enquiry for your team.',
       `Name: ${data.get('name')}`, `Phone: ${data.get('phone')}`, `Message: ${data.get('message')}`,
       '', 'Please contact me regarding this enquiry. Thank you.'
     ].join('\n');
@@ -75,8 +75,8 @@
 
   document.querySelectorAll('.whatsapp-package').forEach(link => link.addEventListener('click', event => {
     event.preventDefault();
-    const packageName = link.dataset.package || 'Umrah Services';
-    openWhatsApp(`Assalam-o-Alaikum Etimad Air Service, I would like details about: ${packageName}. Please share current availability and package information. Thank you.`);
+    const packageName = link.dataset.package || 'Umrah Servicess';
+    openWhatsApp(`Assalam-o-Alaikum Etimad Air Services, I would like details about: ${packageName}. Please share current availability and package information. Thank you.`);
   }));
   const year = document.querySelector('#year');
   if (year) year.textContent = new Date().getFullYear();

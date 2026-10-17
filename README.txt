@@ -1,4 +1,4 @@
-ETIMAD AIR SERVICE WEBSITE
+ETIMAD AIR SERVICES WEBSITE
 
 Files: index.html, style.css, script.js, robots.txt, sitemap.xml
 
